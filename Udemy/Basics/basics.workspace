@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Basics" Database="" Version="10000">
-  <Project Name="Basics" Path="Basics/Basics.project" Active="Yes"/>
+  <Project Name="Basics" Path="Basics/Basics.project" Active="No"/>
+  <Project Name="OOP" Path="OOP/OOP.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
       <Project Name="Basics" ConfigName="Debug"/>
+      <Project Name="OOP" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
       <Project Name="Basics" ConfigName="Release"/>
+      <Project Name="OOP" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

@@ -7,7 +7,21 @@
 
 #include <cstdlib> //convert C-style Strings to other types
 
+#include <vector>
+
 using namespace std; 
+
+void pass_by_value(vector<string> v){
+    v.clear(); //delete all vector elements
+}
+
+void print_vector(vector<string> v){
+    for (auto s:v) //The auto keyword is a simple way to declare a variable that has a complicated type. 
+    //For example, you can use auto to declare a variable where the initialization expression involves templates, 
+    //pointers to functions, or pointers to members.
+        cout << s << " ";
+    cout << endl;
+}
 
 
 // C++ supports 2 types of strings: c-style strings and c++ strings
@@ -25,6 +39,9 @@ int main() {
     
     cout << strlen(my_name) << endl;    
     
+    cout << boolalpha;
+    cout << (100 == 100) << endl;
+//    cout << strcmp(my_name, "Leon Avocado") << endl;
     if (strcmp(my_name, "Leon Avocado") == 0)
         cout << "same la sia" << endl;
     else 
@@ -77,6 +94,11 @@ int main() {
     
     getline(cin, s4);
     cout << "Output with getline: " << s4 << endl; //output: Hello there
+    
+    vector<string> fruit_list {"Apple", "Banana", "Cucumber"};
+    
+    pass_by_value(fruit_list);
+    print_vector(fruit_list);
 
     return 0;
 }

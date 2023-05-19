@@ -93,6 +93,8 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="pointers_references.cpp"/>
+    <File Name="overloading_functions.cpp"/>
     <File Name="functions.cpp"/>
     <File Name="characters_strings.cpp"/>
     <File Name="array_vector.cpp"/>
