@@ -93,6 +93,9 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="constructors.cpp"/>
+    <File Name="Account.cpp"/>
+    <File Name="Account.h"/>
     <File Name="main.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

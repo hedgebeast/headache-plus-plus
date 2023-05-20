@@ -1,1 +1,8 @@
+/Users/Leon/Documents/MQF/Cplusplus/Udemy/Basics/OOP/Account.h
+/Users/Leon/Documents/MQF/Cplusplus/Udemy/Basics/OOP/main.cpp
+/Users/Leon/Documents/MQF/Cplusplus/Udemy/Basics/Basics/pointers_references.cpp
 /Users/Leon/Documents/MQF/Cplusplus/Udemy/Basics/Basics/main.cpp
+/Users/Leon/Documents/MQF/Cplusplus/Udemy/Basics/Basics/array_vector.cpp
+/Users/Leon/Documents/MQF/Cplusplus/Udemy/Basics/Basics/overloading_functions.cpp
+/Users/Leon/Documents/MQF/Cplusplus/Udemy/Basics/Basics/functions.cpp
+/Users/Leon/Documents/MQF/Cplusplus/Udemy/Basics/Basics/characters_strings.cpp
