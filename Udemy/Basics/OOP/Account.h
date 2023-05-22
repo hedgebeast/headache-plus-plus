@@ -12,6 +12,8 @@ public:
   
     bool deposit(double amount);
     bool withdraw(double amount);
+    
+    void set_balance(double);
 };
 
 #endif // _ACCOUNT_H_

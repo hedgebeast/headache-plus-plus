@@ -93,6 +93,9 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="Mystring.cpp"/>
+    <File Name="Mystring.h"/>
+    <File Name="operator_overloading.cpp"/>
     <File Name="constructors.cpp"/>
     <File Name="Account.cpp"/>
     <File Name="Account.h"/>

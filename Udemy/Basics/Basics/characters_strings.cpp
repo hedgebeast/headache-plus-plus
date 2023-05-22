@@ -23,15 +23,33 @@ void print_vector(vector<string> v){
     cout << endl;
 }
 
+// Function that counts the length of a string
+int stringLength(const char* str) {
+    int length = 0;
+    
+    while (*str != '\0') {
+        length++;
+        str++;
+    }
+    
+    return length;
+}
 
 // C++ supports 2 types of strings: c-style strings and c++ strings
 int main() {
     
-    char my_name[12];
+    char my_name[12];    
+    
+    int test_int[5] {1,2,3,4,5};
+    cout << "TESTING: " << test_int << endl;    //returns address of test_int[0]
+    
+    string test_str[3] {"e", "ed", "eddy"};
+    cout << "TESTING: " << test_str << endl;    //returns address of test_str[0]
     
 //    my_name = "Leon"; //Error: array type 'char [8]' is not assignable
     
     strcpy(my_name, "Leon");
+    cout << "TESTING: " << my_name << endl;     //returns the whole cstring
     cout << my_name[0] << my_name[1] << my_name[2] << my_name[3] << endl;
     
     strcat(my_name, " ");
@@ -49,6 +67,15 @@ int main() {
     
     
     cout << my_name << endl;
+    
+    cout << "------------------------------------------------------------------------\n";
+//    const char* myString {"Hello, world!"};
+    
+    // Pass the string as a pointer to the function
+    int length = stringLength("Hello, world!");  
+    
+    cout << "Length of the string: " << length << std::endl;
+    cout << "------------------------------------------------------------------------\n";
     
     char full_name [50] {};
     cout << "Welcome to Heachache++!" << endl;

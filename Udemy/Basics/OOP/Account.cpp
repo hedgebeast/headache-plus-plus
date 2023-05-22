@@ -15,3 +15,6 @@ bool Account::withdraw(double amount) {
     }
 };
 
+void Account::set_balance(double balance){
+    this->balance = balance; //disambiguate identifier use
+}

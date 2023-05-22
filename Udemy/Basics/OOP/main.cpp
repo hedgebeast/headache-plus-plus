@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include <vector>
 
@@ -113,7 +114,10 @@ int main(){
     
     Account *bimbo_account = new Account();
     
-    cout << "Checking Bimbo's account balance: " << (*bimbo_account).balance << endl;
+    bimbo_account->set_balance(129.50);
+    
+    cout << fixed << setprecision(2);
+    cout << "Checking Bimbo's account balance: $" << (*bimbo_account).balance << endl;
 //    cout << (*bimbo_account).deposit(1000.00);
     
     //OR
