@@ -93,6 +93,10 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="polymorphism.cpp"/>
+    <File Name="Savings_Account.cpp"/>
+    <File Name="Savings_Account.h"/>
+    <File Name="inheritance.cpp"/>
     <File Name="Mystring.cpp"/>
     <File Name="Mystring.h"/>
     <File Name="operator_overloading.cpp"/>
