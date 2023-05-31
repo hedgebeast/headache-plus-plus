@@ -93,6 +93,7 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="pure_virtual_func.cpp"/>
     <File Name="polymorphism.cpp"/>
     <File Name="Savings_Account.cpp"/>
     <File Name="Savings_Account.h"/>
