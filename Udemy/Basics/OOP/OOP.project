@@ -93,6 +93,9 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="about_time.txt"/>
+    <File Name="test.txt"/>
+    <File Name="streams.cpp"/>
     <File Name="pure_virtual_func.cpp"/>
     <File Name="polymorphism.cpp"/>
     <File Name="Savings_Account.cpp"/>
