@@ -23,6 +23,7 @@ int main(int argc, char** argv) {
     };
 
     const auto interval = std::chrono::minutes(1);  // we call timer_listener at 1 minute interval
+    
     CsvFeeder csv_feeder(ticker_filename,
                          feeder_listener,
                          interval,

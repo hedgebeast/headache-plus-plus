@@ -10,12 +10,14 @@
 
 class CsvFeeder {
 public:
-    using FeedListener = std::function<void(const Msg& msg)>;
-    using TimerListener = std::function<void(uint64_t ms_now)>;
+    using FeedListener = std::function<void(const Msg& msg)>;       //listen to current market status
+    using TimerListener = std::function<void(uint64_t ms_now)>;     //output something
     
-    CsvFeeder(const std::string ticker_filename,
-              FeedListener feed_listener,
-              std::chrono::minutes interval, TimerListener timer_listener);
+    CsvFeeder(const std::string ticker_filename,    //the filename of the input csv file
+              FeedListener feed_listener,           //the function to be called inside Step() after an update message is loaded
+              std::chrono::minutes interval,        //the time interval to call timer_listener
+              TimerListener timer_listener);        //the function to be called at a given frequency
+              
     ~CsvFeeder();
     bool Step();
 
@@ -25,9 +27,16 @@ private:
     const std::chrono::milliseconds interval_;
     TimerListener timer_listener_;
 
+//    uint64_t* now_ms_{nullptr};
     uint64_t now_ms_{};
     Msg msg_;
+    Msg diffMsg_;
+    
     // your member variables and member functions below, if any
+    
+    
+    
+    
 };
 
 #endif //QF633_CODE_CSVFEEDER_H
